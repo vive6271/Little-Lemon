@@ -1,41 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&family=Quicksand&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+}
+
 .App {
   text-align: center;
 }
 
-ul {
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 3vw;
+  justify-content: center;
+  padding: 2vh;
+}
+
+.top-nav-ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 3vw;
   list-style-type: none;
-  margin: 0s;
-  padding: 0;
   overflow: hidden;
-}
-
-.top-nav-li {
-  float: left;
-}
-
-.top-nav-li > a {
-  display: block;
   color: #333333;
-  font-size: x-large;
+  font-size: 1.8vw;
   font-weight: 600;
-  text-decoration: none;
-  padding: 2vh 0 0 5vw;
+}
+
+.footer-nav {
+  display: grid;
+  grid-auto-flow: column;
+  height: max-content;
+  align-items: star;
+  background-color: #EDEFEE;
+  padding: 2%;
+}
+
+.footer-nav > img {
+  display: flex;
+  width: 6vw;
+  height: 11vw;
+  padding: .5vw 0 .5vw 4vw;
 }
 
 .bottom-block {
-  display: block;
-  padding: 3vh 0 0 20vh;
+  text-align: left;
 }
 
 .bottom-block > h2 {
+  font-size: 1.4vw;
   color: #495E57;
 }
 
-.footer-nav-li > a {
-  display: block;
+.bottom-block > ul {
+  margin: 0;
+  padding: 0 0 0 1vh;
   color: #333333;
-  font-size: x-large;
-  font-weight: 600;
-  text-decoration: none;
-  padding: .5vh 0 0 .5vh;
+  font-size: 1.2vw;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.main-banner {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  background-color: #495E57;
+  padding-top: 2vw;
+  column-gap: 10vw;
+  height:25vw;
+  overflow: visible;
+}
+
+.main-banner > img {
+  height: 28vw;
+  width: 22vw;
+  border-radius: 8%;
+  margin-top: 1vw;
+}
+
+.info > h1 {
+  color: #F4CE14;
+  font-size: 4.5vw;
+}
+
+.info > h3 {
+  color: white;
+  font-size: 2.2vw;
+}
+
+.info > p {
+  color: #e5e5e5;
+  width: 32vw;
+  font-size: 1.8vw;
+  padding: 5% 0 5% 0;
+}
+
+button {
+  display: inline-block;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-size: 2vw;
+  text-align: center;
+  height: 4vw;
+  width: 15vw;
+  padding: 2% 5% 2% 5%;
+  border-radius: 16px;
+  border: none;
+  white-space: nowrap;
+}
+
+.menu-top {
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  margin: 8vw 0 4vw 0;
+}
+
+.bar {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  column-gap: 22vw;
+}
+
+.bar > h1 {
+  font-size: 4vw;
+}
+
+.item-menu {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 2vw;
+  margin: 4vw;
+}
+
+.card {
+  display: block;
+  background-color: #EDEFEE;
+  width: 20vw;
+  border-radius: 8%;
+}
+
+.card > img {
+  display: flex;
+  width: 20vw;
+  height: 14vw;
+  border-radius: 8% 8% 0 0;
+}
+
+.card > .heading {
+  display: flex;
+  justify-content: space-between;
+  padding: .5vw 1vw 0 1vw;
+}
+
+.heading > h1 {
+  font-size: 2.2vw;
+}
+
+.heading > h1:nth-child(2) {
+  color: #EE9972;
+}
+
+.card > p {
+  font-size: 1.4vw;
+  color: #333333;
+  padding: 1vw;
+}
+
+.delivery > h1 {
+  font-size: 1.7vw;
+}
+
+.delivery {
+  display: flex;
+  justify-content: left;
+  column-gap: 1vw;
+  padding: 0 0 1vw 1vw;
+}
+
+.testimonials{
+  display: grid;
+  background-color: #FBDABB;
+}
+
+.testimonials > h1 {
+  text-align: center;
+  font-size: 4vw;
+  padding: 2vw 0 4vw 0;
+}
+
+.rate-box {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  column-gap: 2vw;
+  padding-bottom: 4vw;
+}
+
+.rate-card {
+  display: grid;
+  place-items: center;
+  row-gap: .5vw;
+  background-color: white;
+  width: 15vw;
+  height: fit-content;
+  border-radius: 8%;
+  padding: 1vw;
+}
+
+.rate-card > h1 {
+  font-size: 2.4vw;
+  color: #495E57;
+}
+
+.rate-card > h2 {
+  font-size: 1.6vw;
+  color: #333333;
+}
+
+.rate-card > p {
+  font-size: .9vw;
+}
+
+.info-about > h1 {
+  font-size: 4.5vw;
+  color: #495E57;
+}
+
+.info-about > h3 {
+  font-size: 2.2vw;
+  color: #F4CE14;
+}
+
+.info-about > p {
+  font-size: 1.5vw;
+  width: 25vw;
+  padding-top: 3vw;
+}
+
+.about {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  background-color: white;
+  margin: 6vw;
+  column-gap: 10vw;
+}
+
+.about-img {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  position: relative;
+}
+
+.about-img > img:nth-child(1) {
+  grid-column: 1 / span 4;
+  grid-row:1;
+  padding-top: 6vw;
+}
+
+.about-img > img:nth-child(2) {
+  grid-column: 4 / -1;
+  grid-row: 1;
+  z-index: 1;
 }

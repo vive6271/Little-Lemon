@@ -1,9 +1,15 @@
-
+import MainBanner from "./MainBanner";
+import MainMenu from "./MainMenu";
+import MainRate from "./MainRate";
+import MainAbout from "./MainAbout";
 
 const Main = () => {
     return (
         <>
-         <h1>Little Lemon</h1>
+          <MainBanner/>
+          <MainMenu/>
+          <MainRate/>
+          <MainAbout/>
         </>
     );
 }

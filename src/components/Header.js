@@ -1,10 +1,10 @@
 import Nav from "./Nav";
-import logo from"../assets/logo-top.png"
+import logo from"../images/logo-top.png"
 
 const Header = () => {
     return (
-      <div className='header' style={{display: 'flex'}}>
-        <img src={logo} alt="Logo" style={{display: 'flex', width:'240px', padding: '2vh 0 0 10vw'}}/>
+      <div className='header'>
+        <img src={logo} alt="Logo" style={{display: 'flex', width: '15vw'}}/>
         <Nav/>
       </div>
     )
