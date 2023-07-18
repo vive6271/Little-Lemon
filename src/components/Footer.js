@@ -1,4 +1,5 @@
 import logo from "../images/logo-bottom.png"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -6,14 +7,14 @@ const Footer = () => {
             <img src={logo} alt="Logo" />
             <div className="doormat bottom-block">
                 <h2>Doormat Navigation</h2>
-                <ul>
-                    <li> <a herf="#">Home</a> </li>
-                    <li> <a herf="#" >About</a> </li>
-                    <li> <a herf="#" >Menu</a> </li>
-                    <li> <a herf="#" >Reservations</a> </li>
-                    <li> <a herf="#" >Online Order</a> </li>
-                    <li> <a herf="#" >Login</a> </li>
-                </ul>
+                <nav>
+                    <Link to='/' className='nav-item-footer'>Home</Link>
+                    <Link to='/about' className='nav-item-footer'>About</Link>
+                    <Link to='/menu' className='nav-item-footer'>Menu</Link>
+                    <Link to='/booking-page' className='nav-item-footer'>Reservation</Link>
+                    <Link to='/online-order' className='nav-item-footer'>Online Order</Link>
+                    <Link to='/login' className='nav-item-footer'>Login</Link>
+                </nav>
             </div>
             <div className="Contact bottom-block">
                 <h2>Contact</h2>

@@ -1,5 +1,5 @@
 import Card from "./Card";
-
+import { Link } from "react-router-dom";
 const foods = [
     {
         title: "Greek salad",
@@ -27,7 +27,7 @@ const MainMenu = () => {
         <div className='menu-top'>
             <div className='bar'>
               <h1>This weeks specials!</h1>
-              <button>Online Menu</button>
+              <button><Link to='/menu' className='link'>Online Menu</Link></button>
             </div>
 
             <div className='item-menu'>

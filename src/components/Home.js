@@ -3,7 +3,7 @@ import MainMenu from "./MainMenu";
 import MainRate from "./MainRate";
 import MainAbout from "./MainAbout";
 
-const Main = () => {
+const Home = () => {
     return (
         <>
           <MainBanner/>
@@ -14,4 +14,4 @@ const Main = () => {
     );
 }
 
-export default Main;
+export default Home;
