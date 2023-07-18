@@ -1,22 +1,22 @@
 import {Routes, Route} from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Menu from './components/Menu';
-import BookingPage from './components/BookingPage';
-import Online from './components/Online';
-import Login from './components/Login';
-import ConfirmedBooking from './components/ConfirmedBooking';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import MenuPage from './pages/MenuPage';
+import BookingPage from './pages/BookingPage';
+import OrderPage from './pages/OrderPage';
+import LoginPage from './pages/LoginPage';
+import ConfirmedBookingPage from './pages/ConfirmedBookingPage';
 
 const Routing = () => {
     return (
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/about' element={<About/>} />
-          <Route path='/menu' element={<Menu/>} />
+          <Route path='/' element={<HomePage/>} />
+          <Route path='/about' element={<AboutPage/>} />
+          <Route path='/menu' element={<MenuPage/>} />
           <Route path='/booking-page' element={<BookingPage/>} />
-          <Route path='/online-order' element={<Online/>} />
-          <Route path='/login' element={<Login/>} />
-          <Route path='/booking-confirmed' element={<ConfirmedBooking/>} />
+          <Route path='/online-order' element={<OrderPage/>} />
+          <Route path='/login' element={<LoginPage/>} />
+          <Route path='/booking-confirmed' element={<ConfirmedBookingPage/>} />
        </Routes>
     );
 }

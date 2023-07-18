@@ -1,6 +1,6 @@
 import logo from "../images/confirm.png"
 
-const ConfirmedBooking  = (props) => {
+const ConfirmedBookingPage  = (props) => {
     return (
         <div className="booking">
             <img src={logo} alt="Logo" style={{display: 'flex', width: '10vw'}}/>
@@ -10,4 +10,4 @@ const ConfirmedBooking  = (props) => {
     );
 }
 
-export default ConfirmedBooking;
+export default ConfirmedBookingPage;

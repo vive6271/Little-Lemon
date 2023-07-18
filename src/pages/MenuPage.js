@@ -1,4 +1,4 @@
-const Menu = () => {
+const MenuPage = () => {
     return (
         <div>
             <h1>Menu Page</h1>
@@ -6,4 +6,4 @@ const Menu = () => {
     );
 }
 
-export default Menu;
+export default MenuPage;

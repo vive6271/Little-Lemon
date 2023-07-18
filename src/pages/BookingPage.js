@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useReducer } from 'react';
-import GridImage from './GridImage';
+import GridImage from '../components/GridImage';
 import res1 from '../images/res1.jpg';
 import res2 from '../images/res2.jpg';
-import BookingForm from './BookingForm';
-import bookingAPI from './bookingAPI';
+import BookingForm from '../components/BookingForm';
+import bookingAPI from '../api/bookingAPI';
 import { useNavigate } from 'react-router-dom';
 
 const BookingPage = () => {
