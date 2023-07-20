@@ -8,7 +8,7 @@ const  MainBanner = () => {
                 <h1>Little Lemon</h1>
                 <h3>Chicago</h3>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                <button><Link to='/booking-page' className='link'>Reserve a table</Link></button>
+                <Link to='/booking-page' className='link'><button>Reserve a table</button></Link>
             </div>
             <img src={ban} alt="Banner"/>
         </div>

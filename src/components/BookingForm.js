@@ -8,6 +8,8 @@ const BookingForm = (props) => {
     e.preventDefault();
     props.submitForm(props.data);
     props.setData({
+      name:'',
+      email:'',
       date:"",
       time:"",
       guest:"",
@@ -18,11 +20,19 @@ const BookingForm = (props) => {
   }
 
   const disableBtn = () => {
-    return !(props.data.date && props.data.time && props.data.loc && props.data.occasion);
+    return !(props.data.email &&props.data.date && props.data.time && props.data.loc && props.data.occasion);
   }
 
   return(
     <form onSubmit={handleSubmit}>
+      <div className='lable'>
+        <label htmlFor='name'>Name : </label>
+        <input type='text' id='name' value={props.data.value} name="name" placeholder='Name'onChange={handleChange}/>
+      </div>
+      <div className='lable'>
+        <label htmlFor='email'>Email : </label>
+        <input type='email' id='email' value={props.data.value} name="email" placeholder='Email'onChange={handleChange}/>
+      </div>
       <div className='lable'>
         <label htmlFor='date'> Choose Date : </label>
         <input type="date" id="date" value={props.data.date} name="date" onChange={handleChange}/>

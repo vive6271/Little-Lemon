@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom';
 
 const BookingPage = () => {
   const [data, setData] = useState({
+    name:'',
+    email:'',
     date: '',
     time: '',
     guest: '',

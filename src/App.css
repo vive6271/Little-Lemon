@@ -16,7 +16,7 @@
   grid-auto-flow: column;
   column-gap: 10vw;
   justify-content: center;
-  padding: 2vh;
+  padding: 1vw;
 }
 
 .top-nav {
@@ -109,17 +109,19 @@
 }
 
 button {
-  display: inline-block;
+  display: inline-flex;
   background-color: #F4CE14;
   height: 4vw;
   width: fit-content;
-  padding: 2% 10% 2% 10%;
+  height:4vw;
+  align-items: center;
+  padding: 1vw 2vw 1vw 2vw;
   border-radius: 16px;
   border: none;
   white-space: nowrap;
 }
 
-button > .link {
+.link > button {
   color: #495E57;
   font-size: 2vw;
   text-align: center;
@@ -137,7 +139,7 @@ button > .link {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
-  column-gap: 22vw;
+  column-gap: 24vw;
 }
 
 .bar > h1 {
@@ -155,7 +157,7 @@ button > .link {
   display: block;
   background-color: #EDEFEE;
   width: 20vw;
-  border-radius: 8%;
+  border-radius: 2vw;
 }
 
 .card > img {
@@ -303,6 +305,7 @@ button > .link {
 
 form {
   display: flex;
+  height: fit-content;
   flex-direction: column;
   background-color: #EDEFEE;
   padding: 1vw;
@@ -319,6 +322,8 @@ input, select {
   font-size: 1.5vw;
   margin: .5vw;
   border-radius: 8px;
+  border: 2px solid #495E57;
+  text-align:center;
   color: #333333;
   text-align: center;
   width: fit-content;
@@ -338,7 +343,7 @@ textarea {
 
 
 form > button {
-  margin: auto;
+  margin: 1vw auto 0 auto;
   text-align: center;
   color: #495E57;
   font-size: 2vw;
@@ -364,4 +369,66 @@ button[disabled]{
 .booking > p {
   font-size: 1.3vw;
   color: #777777;
+}
+
+.vertical-card {
+  display: flex;
+  justify-content: center;
+  margin: 5vw 0 5vw 0;
+  column-gap: 5vw;
+}
+
+.ver-info{
+  width: 35vw;
+}
+
+.ver-info > h1{
+  font-size: 3vw;
+}
+
+.ver-info > p {
+  font-size: 1.5vw;
+  color: #777777;
+  padding-top: .5vw;
+}
+
+.ver-info > button {
+  margin-top: 1.5vw;
+  font-size: 1.8vw;
+  padding: 0 4vw 0 4vw;
+}
+
+.img-card > img {
+  width: 27vw;
+  height: 18vw;
+  border-radius: 1vw;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  margin: 4vw 0 10vw 0;
+}
+
+.box > form {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: column;
+  background-color: #EDEFEE;
+  padding: 2vw;
+  border-radius: 16px;
+}
+
+.box > form > h1 {
+  font-size: 4vw;
+  color: #495E57;
+  text-align: center;
+  margin: 2vw;
+}
+
+.link{
+  text-decoration: none;
+  margin: 2vw auto 2vw auto;
+  align-items: center;
 }
