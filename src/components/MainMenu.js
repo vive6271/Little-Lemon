@@ -4,7 +4,7 @@ import { foods } from "../api/foodMenu";
 
 const MainMenu = () => {
     return(
-        <div className='menu-top'>
+        <div className='menu-top' aria-label="Menu Options">
             <div className='bar'>
               <h1>This weeks specials!</h1>
               <Link to='/menu' className='link'><button>Online Menu</button></Link>

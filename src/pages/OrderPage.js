@@ -11,7 +11,7 @@ const OrderPage = () => {
     }
     return (
         <div>
-            <div className='menu=page'>
+            <div className='menu-page'>
                 {foods.map((food) => (
                     <VerticalCard
                      key={food.title}

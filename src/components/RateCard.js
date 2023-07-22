@@ -1,9 +1,14 @@
 const RateCard = ({name, imgSrc, review}) => {
     return (
-        <div className='rate-card'>
-            <h1>Rating</h1>
-            <img src={imgSrc} alt={name} style={{display: 'flex', width: '5vw'}}/>
-            <h2>{name}</h2>
+        <div className='rate-card' aria-label="Rating Card">
+            <h1>{name}</h1>
+            <div className="imgBlock">
+                <img src={imgSrc} alt={name}/>
+                <div className="rating">
+                    <h2>Rating</h2>
+                    <h4>⭐ ⭐ ⭐ ⭐ ⭐ </h4>
+                </div>
+            </div>
             <p>{review}</p>
         </div>
     );

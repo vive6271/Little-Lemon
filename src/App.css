@@ -1,180 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Karla:wght@300;400;500&family=Markazi+Text:wght@400;500;600&display=swap');
 
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Markazi Text', serif;
-  font-weight: 500;
 }
 
-.App {
-  text-align: center;
+* ::-webkit-scrollbar {
+  display: none;
 }
 
 .header {
-  display: grid;
-  grid-auto-flow: column;
-  column-gap: 10vw;
+  display: flex;
   justify-content: center;
-  padding: 1vw;
+  align-items: center;
+  column-gap: 8vw;
+  margin: 1vw;
+}
+
+.logo {
+  display: flex;
+  width: 15vw;
 }
 
 .top-nav {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   column-gap: 4vw;
 }
 
-.nav-item {
-  text-decoration: none;
-  color: #333333;
-  font-size: 1.8vw;
+.top-nav > .nav-item{
+  font-family: "Markazi Text";
   font-weight: 500;
+  font-size: 2vw;
+  color: #495E57;;
 }
 
 .nav-item:hover {
   color: #F4CE14;
 }
 
-.footer-nav {
-  display: grid;
-  grid-auto-flow: column;
-  height: max-content;
-  align-items: star;
-  background-color: #EDEFEE;
-  padding: 2%;
-}
-
-.footer-nav > img {
-  display: flex;
-  width: 6vw;
-  height: 11vw;
-  padding: .5vw 0 .5vw 4vw;
-}
-
-.bottom-block {
-  text-align: left;
-}
-
-.bottom-block > h2 {
-  font-size: 1.4vw;
-  color: #495E57;
-}
-
-.nav-item-footer, .bottom-block > ul {
-  display: grid;
-  margin: 0;
-  padding: 0 0 0 .5vw;
-  color: #333333;
-  font-size: 1.2vw;
-  font-weight: 500;
-  list-style-type: none;
+.nav-item, .nav-item-footer {
   text-decoration: none;
 }
 
-.main-banner {
-  display: grid;
-  grid-auto-flow: column;
+.main-banner{
+  display: flex;
   justify-content: center;
+  column-gap: 14vw;
+  height: 26vw;
   background-color: #495E57;
-  padding-top: 2vw;
-  column-gap: 10vw;
-  height:25vw;
   overflow: visible;
+  margin-top: 2vw;
+}
+
+.banner-info {
+  display: flex;
+  margin-top: 2vw;
+  flex-direction: column;
+}
+
+.banner-info > h1 {
+  color: #F4CE14;
+  font-size: 4.5vw;
+  font-family: "Markazi Text";
+  font-weight: 500;
+}
+
+.banner-info > h3 {
+  color: white;
+  font-size: 2.5vw;
+  font-family: "Markazi Text";
+  font-weight: 400;
+}
+
+.banner-info > p {
+  margin: 2vw 0 2vw 0;
+  font-family: "Inter";
+  color: #e5e5e5;
+  width: 32vw;
+  font-size: 1.2vw;
 }
 
 .main-banner > img {
-  height: 28vw;
   width: 22vw;
-  border-radius: 8%;
-  margin-top: 1vw;
-}
-
-.info > h1 {
-  color: #F4CE14;
-  font-size: 4.5vw;
-}
-
-.info > h3 {
-  color: white;
-  font-size: 2.2vw;
-}
-
-.info > p {
-  color: #e5e5e5;
-  width: 32vw;
-  font-size: 1.8vw;
-  padding: 5% 0 5% 0;
+  height: 28vw;
+  border-radius: 2vw;
+  margin-top: 2vw;
 }
 
 button {
-  display: inline-flex;
+  display: block;
   background-color: #F4CE14;
-  height: 4vw;
+  color: #495E57;
   width: fit-content;
-  height:4vw;
-  align-items: center;
   padding: 1vw 2vw 1vw 2vw;
-  border-radius: 16px;
+  font-size: 1.6vw;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Inter";
+  border-radius: 1vw;
   border: none;
-  white-space: nowrap;
 }
 
-.link > button {
-  color: #495E57;
-  font-size: 2vw;
-  text-align: center;
+.link {
   text-decoration: none;
 }
 
 .menu-top {
   display: grid;
+  margin: 7vw 0 7vw 0;
   grid-auto-flow: row;
   justify-content: center;
-  margin: 8vw 0 4vw 0;
 }
 
-.bar {
-  display: grid;
+.menu-top > .bar {
+  display: flex;
   grid-auto-flow: column;
   justify-content: center;
-  column-gap: 24vw;
+  column-gap: 31vw;
+  align-items: center;
 }
 
 .bar > h1 {
-  font-size: 4vw;
+  font-family: "Markazi Text";
+  font-size: 3.5vw;
+  font-weight: 500;
 }
 
 .item-menu {
   display: grid;
   grid-auto-flow: column;
-  column-gap: 2vw;
-  margin: 4vw;
+  overflow:scroll;
+  margin-top: 5vw;
 }
 
 .card {
-  display: block;
-  background-color: #EDEFEE;
-  width: 20vw;
-  border-radius: 2vw;
-}
-
-.card > img {
   display: flex;
-  width: 20vw;
-  height: 14vw;
-  border-radius: 8% 8% 0 0;
+  flex-direction: column;
+  background-color: #EDEFEE;
+  margin: 2vw;
+  width: 21vw;
+  border-radius: 1vw;
 }
 
-.card > .heading {
+.card > .heading{
   display: flex;
   justify-content: space-between;
   padding: .5vw 1vw 0 1vw;
 }
 
+.card > img {
+  display: flex;
+  width: 21vw;
+  height: 14vw;
+  border-radius: 1vw 1vw 0 0;
+}
+
 .heading > h1 {
   font-size: 2.2vw;
+  font-family: "Markazi Text";
+  font-weight: 600;
 }
 
 .heading > h1:nth-child(2) {
@@ -182,13 +166,20 @@ button {
 }
 
 .card > p {
-  font-size: 1.4vw;
+  font-family: "Karla";
+  font-size: 1.2vw;
+  font-weight: 500;
   color: #333333;
   padding: 1vw;
 }
 
 .delivery > h1 {
-  font-size: 1.7vw;
+  font-size: 1.5vw;
+}
+
+.delivery > img {
+  display: flex;
+  width: 2vw;
 }
 
 .delivery {
@@ -199,13 +190,15 @@ button {
 }
 
 .testimonials{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-color: #FBDABB;
 }
 
 .testimonials > h1 {
   text-align: center;
-  font-size: 4vw;
+  font-family: "Markazi Text";
+  font-size: 4.5vw;
   padding: 2vw 0 4vw 0;
 }
 
@@ -213,47 +206,72 @@ button {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
-  column-gap: 2vw;
+  overflow: scroll;
   padding-bottom: 4vw;
 }
 
 .rate-card {
   display: grid;
   place-items: center;
-  row-gap: .5vw;
   background-color: white;
-  width: 15vw;
+  width: fit-content;
   height: fit-content;
   border-radius: 8%;
   padding: 1vw;
+  margin: 2vw;
+  font-family: "Karla";
 }
 
 .rate-card > h1 {
-  font-size: 2.4vw;
+  font-size: 2vw;
+  font-family: "Markazi Text";
   color: #495E57;
 }
 
-.rate-card > h2 {
-  font-size: 1.6vw;
-  color: #333333;
+.imgBlock {
+  display: flex;
+  column-gap: 2vw;
+  color:#333333;
+  align-items: center;
+}
+
+.imgBlock > img {
+  display: flex;
+  width: 5vw;
+}
+
+.rating > h2 {
+  font-size: 1.3vw;
+  margin-bottom: .4vw;
+}
+
+.rating > h4 {
+  font-size: .8vw;
 }
 
 .rate-card > p {
-  font-size: .9vw;
+  font-size: .8vw;
+  width: 14vw;
+  font-weight: 500;
+  padding: 1vw;
 }
 
 .info-about > h1 {
   font-size: 4.5vw;
+  font-family: "Markazi Text";
   color: #495E57;
 }
 
 .info-about > h3 {
+  font-family: "Markazi Text";
   font-size: 2.2vw;
   color: #F4CE14;
 }
 
 .info-about > p {
-  font-size: 1.5vw;
+  font-family: "Karla";
+  font-size: 1.4vw;
+  font-weight: 500;
   width: 25vw;
   padding-top: 3vw;
 }
@@ -265,6 +283,17 @@ button {
   background-color: white;
   margin: 5vw;
   column-gap: 12vw;
+}
+
+.about-img {
+  display: grid;
+  width: 26.3vw;
+}
+
+#main-about-img > img{
+  display: flex;
+  width: 15vw;
+  height: 22vw;
 }
 
 .gridImg {
@@ -285,90 +314,46 @@ button {
   z-index: 1;
 }
 
-.reservation {
+.footer-nav {
+  display: grid;
+  grid-auto-flow: column;
+  height: max-content;
+  align-items: start;
+  background-color: #dedede;
+  padding: 2%;
+}
+
+.footer-nav > img {
   display: flex;
-  justify-content: right;
-  margin: 5vh;
+  width: 6vw;
+  height: 11vw;
+  padding: .5vw 0 .5vw 4vw;
 }
 
-.res-info > .txt {
-  margin: 0 0 3vw 0;
-  font-size: 1.4vw;
-  width: 50vw;
-  color: #777777;
+.nav-item-footer, li {
+  font-family: "Karla";
+  font-size: 1.2vw;
+  padding: .2vw 0 0 .2vw;
+  font-weight: 500;
+  color:#333333;
 }
 
-.txt > h1 {
-  margin: 0 0 1vw 0;
+.bottom-block {
+  text-align: left;
+}
+
+.bottom-block > h2 {
+  font-family: "Markazi Text";
+  font-size: 1.8vw;
   color: #495E57;
 }
 
-form {
+.nav-item-footer, .bottom-block > ul {
   display: flex;
-  height: fit-content;
   flex-direction: column;
-  background-color: #EDEFEE;
-  padding: 1vw;
-  border-radius: 16px;
-}
-
-label {
-  font-size: 1.5vw;
-  margin: .5vw;
-  color: #333333;
-}
-
-input, select {
-  font-size: 1.5vw;
-  margin: .5vw;
-  border-radius: 8px;
-  border: 2px solid #495E57;
-  text-align:center;
-  color: #333333;
-  text-align: center;
-  width: fit-content;
-}
-
-textarea {
-  width:25vw;
-  height: 10vw;
-  font-size: 1.4vw;
-  border-radius: 8px;
-  color:#777777;
-}
-
-.lable {
-  display: flex;
-}
-
-
-form > button {
-  margin: 1vw auto 0 auto;
-  text-align: center;
-  color: #495E57;
-  font-size: 2vw;
-}
-
-button[disabled]{
-  background-color:#a8a8a8;
-}
-
-.booking {
-  display: flex;
-  margin: 5vw 0 10vw 0;
-  flex-direction: column;
-  align-items: center;
-}
-
-.booking > h1 {
-  margin: 2vw 0 0.5vw 0;
-  font-size: 3vw;
-  color: #495E57;
-}
-
-.booking > p {
-  font-size: 1.3vw;
-  color: #777777;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .vertical-card {
@@ -383,19 +368,16 @@ button[disabled]{
 }
 
 .ver-info > h1{
-  font-size: 3vw;
+  font-family: "Markazi Text";
+  font-size: 3.5vw;
+  padding-bottom: 1vw;
 }
 
 .ver-info > p {
-  font-size: 1.5vw;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.4vw;
   color: #777777;
-  padding-top: .5vw;
-}
-
-.ver-info > button {
-  margin-top: 1.5vw;
-  font-size: 1.8vw;
-  padding: 0 4vw 0 4vw;
 }
 
 .img-card > img {
@@ -404,31 +386,393 @@ button[disabled]{
   border-radius: 1vw;
 }
 
-.box{
+.reservation {
   display: flex;
+  align-items: start;
   justify-content: center;
-  margin: 4vw 0 10vw 0;
+  column-gap: 8vw;
+  margin: 5vw 0 5vw 0;
 }
 
-.box > form {
-  display: flex;
-  width: fit-content;
-  height: fit-content;
-  flex-direction: column;
-  background-color: #EDEFEE;
-  padding: 2vw;
-  border-radius: 16px;
+.res-info > .txt {
+  margin-bottom: 4vw;
+  font-size: 1.4vw;
+  width: 50vw;
+  color: #777777;
 }
 
-.box > form > h1 {
-  font-size: 4vw;
+.txt > h1 {
+  margin: 0 0 1vw 0;
   color: #495E57;
-  text-align: center;
-  margin: 2vw;
+  font-family: "Markazi Text";
 }
 
-.link{
-  text-decoration: none;
-  margin: 2vw auto 2vw auto;
+.txt > p {
+  font-family: "Karla";
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.res-grid-img {
+  width: 52.5vw;
+}
+
+#res-img > img {
+  display: flex;
+  width: 30vw;
+  height: 20vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  row-gap: .5vw;
+  border-radius: 1vw;
+  height: fit-content;
+  width: fit-content;
+  background-color:#dedede;
+}
+
+form > button {
+  margin: auto;
+}
+
+button[disabled]{
+  background-color:#a8a8a8;
+}
+
+label {
+  font-family: "Karla";
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin: .5vw;
+  color: #333333;
+}
+
+input, select {
+  font-family: "Karla";
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin: .5vw;
+  border-radius: 8px;
+  border: 2px solid #495E57;
+  text-align:center;
+  color: #333333;
+  text-align: center;
+  width: fit-content;
+}
+
+textarea {
+  font-family: "Karla";
+  font-weight: 500;
+  width:25vw;
+  height: 10vw;
+  font-size: 1.2vw;
+  border-radius: 8px;
+  color:#606060;
+}
+
+.box {
+  display: flex;
+  margin: 5vw;
+  justify-content: center;
+  text-align: center;
+}
+
+form > h1 {
+  font-family: "Markazi Text";
+  text-align: center;
+  font-size: 3.5vw;
+  color: #495E57;
+}
+
+.booking {
+  display: flex;
+  margin: 5vw 0 10vw 0;
+  flex-direction: column;
   align-items: center;
+}
+
+.booking > img {
+  display: flex;
+  width: 10vw;
+}
+
+.booking > h1 {
+  margin: 2vw 0 0.5vw 0;
+  font-size: 3vw;
+  color: #495E57;
+}
+
+.booking > p {
+  font-size: 1.3vw;
+  color: #777777;
+}
+
+
+@media screen and (max-width: 600px){
+
+  .header {
+    display: fixed;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 35vw;
+    height: 10vw;
+  }
+
+  .menu {
+    display: flex;
+    column-gap: 50vw;
+  }
+
+  .top-nav > .nav-item {
+    font-size: 5vw;
+    border-bottom: 1px solid rgb(171, 171, 171);
+  }
+
+  .header > .top-nav{
+    flex-direction: column;
+  }
+
+  .main-banner {
+    column-gap: 4vw;
+    height: 40vw;
+  }
+
+  .banner-info > h1 {
+    font-size: 8vw;
+  }
+
+  .banner-info > h3 {
+    font-size: 5vw;
+  }
+
+  .banner-info > p {
+    font-size: 2.5vw;
+    width: 50vw;
+    padding-bottom: 1vw;
+  }
+
+  .main-banner > img {
+    margin-top: 4vw;
+    width: 30vw;
+    height: 40vw;
+  }
+
+  button {
+    font-size: 3vw;
+    border-radius: 2vw;
+    padding: 1.5vw;
+  }
+
+  .menu-top > .bar {
+    column-gap: 22vw;
+  }
+
+  .bar > h1 {
+    font-size: 6vw;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEFEE;
+    width: 40vw;
+    border-radius: 2vw;
+  }
+
+  .card > img {
+    width: 40vw;
+    height: 26vw;
+  }
+
+  .card > .heading > h1 {
+    font-size: 4vw;
+  }
+
+  .card > p {
+    font-size: 2vw;
+  }
+
+  .delivery {
+    margin: 1vw 0 1vw 0;
+  }
+
+  .delivery > h1 {
+    font-size: 2.5vw;
+  }
+
+  .delivery > img {
+    width: 3.5vw;
+  }
+
+  .testimonials > h1 {
+    font-size: 7vw;
+  }
+
+  .rate-box {
+    justify-content: left;
+  }
+
+  .rate-card {
+    width: fit-content;
+  }
+
+  .rate-card > h1 {
+    font-size: 3.8vw;
+  }
+
+  .imgBlock {
+    column-gap: 6vw;
+  }
+
+  .imgBlock > img {
+    width: 10vw;
+  }
+
+  .rating > h2 {
+    font-size: 2.2vw;
+  }
+
+  .rating > h4 {
+    font-size: 1.4vw;
+  }
+
+  .rate-card > p {
+    font-size: 2vw;
+    width: 30vw;
+    padding: 2vw;
+  }
+
+  .about {
+    margin: 5vw 0 5vw 0;
+    column-gap: 10vw;
+    align-items: center;
+  }
+
+  .info-about > h1 {
+    font-size:  8vw;
+  }
+
+  .info-about > h3 {
+    font-size: 5vw;
+  }
+
+  .info-about > p {
+    font-size: 2.5vw;
+    width: 40vw;
+  }
+
+  .about-img{
+    width: 43.8vw;
+  }
+
+  #main-about-img > img{
+    display: flex;
+    width: 25vw;
+    height: 38vw;
+  }
+
+  .footer-nav > img {
+    width: 12vw;
+    height: 22vw;
+  }
+  .bottom-block > h2 {
+    font-size: 3.4vw;
+  }
+
+  .nav-item-footer, li {
+    font-size: 2vw;
+  }
+
+  .vertical-card {
+    column-gap: 12vw;
+  }
+
+  .ver-info > h1 {
+    font-size: 5vw;
+  }
+
+  .ver-info > p {
+    font-size: 2vw;
+    width: 40vw;
+  }
+
+  .img-card > img {
+    width: 39vw;
+    height: 26vw;
+  }
+
+  .reservation{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .res-info {
+    margin: 5vw 0 5vw 0;
+    justify-content: center;
+  }
+
+  .res-info > .txt {
+    margin: 0 5vw 10vw 0;
+  }
+
+  .txt > h1 {
+    font-size: 5.7vw;
+    width: 90vw;
+  }
+
+  .txt > p {
+    font-size: 3vw;
+    width: 90vw;
+  }
+
+  .res-grid-img {
+    width: 84vw;
+  }
+
+  #res-img > img {
+    width: 48vw;
+    height: 32vw;
+  }
+
+  label {
+    font-size: 3vw;
+  }
+
+  input, select {
+    font-size: 3vw;
+    border-width: .2vw;
+    border-radius: 1vw;
+  }
+
+  textarea {
+    width: 45vw;
+  }
+
+  form > button {
+    margin-top: 2vw;
+  }
+
+  .box > form > h1 {
+    font-size: 7vw;
+  }
+
+  .booking {
+    margin: 20vw 0 40vw 0;
+  }
+  .booking > img {
+    width: 25vw;
+  }
+
+  .booking > h1 {
+    font-size: 6vw;
+  }
+
+  .booking > p {
+    font-size: 3vw;
+  }
 }

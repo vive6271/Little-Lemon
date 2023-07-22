@@ -25,7 +25,7 @@ const ratings =  [
 
 const MainRate = () => {
     return(
-        <div className='testimonials'>
+        <div className='testimonials' aria-label="Testimonials">
             <h1>Testimonials</h1>
             <div className='rate-box'>
                 {ratings.map((rating) => (

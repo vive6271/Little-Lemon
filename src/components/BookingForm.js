@@ -1,5 +1,5 @@
 const BookingForm = (props) => {
-
+  const minDate = new Date().toISOString().substring(0, 10);
   function handleChange(e) {
     props.setData({...props.data, [e.target.name]: e.target.value});
   }
@@ -25,6 +25,7 @@ const BookingForm = (props) => {
 
   return(
     <form onSubmit={handleSubmit}>
+      <h1>Book Now</h1>
       <div className='lable'>
         <label htmlFor='name'>Name : </label>
         <input type='text' id='name' value={props.data.value} name="name" placeholder='Name'onChange={handleChange}/>
@@ -35,7 +36,7 @@ const BookingForm = (props) => {
       </div>
       <div className='lable'>
         <label htmlFor='date'> Choose Date : </label>
-        <input type="date" id="date" value={props.data.date} name="date" onChange={handleChange}/>
+        <input type="date" id="date" value={props.data.date} min={minDate} name="date" onChange={handleChange}/>
       </div>
 
       <div className='lable'>

@@ -7,6 +7,7 @@ import bookingAPI from '../api/bookingAPI';
 import { useNavigate } from 'react-router-dom';
 
 const BookingPage = () => {
+
   const [data, setData] = useState({
     name:'',
     email:'',
@@ -21,8 +22,8 @@ const BookingPage = () => {
 
   const navigate = useNavigate();
 
-  const initializeTimes = {
-    availableTimes: [],
+  const initializeTimes = () => {
+    return { availableTimes: [] }
   };
 
   const updateTimes = (state, action) => {
@@ -61,9 +62,11 @@ const BookingPage = () => {
             twist. Just book your table today and enjoy delicious food.
           </p>
         </div>
-        <GridImage fImg={res1} sImg={res2} style={{ display: 'flex', width: '30vw', height: '20vw' }} />
+        <div className='res-grid-img'>
+          <GridImage fImg={res1} sImg={res2} iName={"res-img"}/>
+        </div>
       </div>
-      <BookingForm data={data} availableTimes={availableTimes} submitForm={submitForm} setData={setData} />
+      <BookingForm data={data} availableTimes={availableTimes} submitForm={submitForm} setData={setData}/>
     </div>
   );
 };

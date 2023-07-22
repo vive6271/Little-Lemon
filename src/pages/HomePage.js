@@ -5,12 +5,12 @@ import MainAbout from "../components//MainAbout";
 
 const HomePage = () => {
     return (
-        <>
+        <main>
           <MainBanner/>
           <MainMenu/>
           <MainRate/>
           <MainAbout/>
-        </>
+        </main>
     );
 }
 
